@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using MS.Access.MCP.Interop;
 
 class Program
@@ -716,15 +717,27 @@ class Program
 
 public class JsonRpcRequest
 {
+    [JsonPropertyName("jsonrpc")]
     public string Jsonrpc { get; set; } = "2.0";
+
+    [JsonPropertyName("id")]
     public int Id { get; set; }
-    public string Method { get; set; } = "";
+
+    [JsonPropertyName("method")]
+    public string Method { get; set; } = string.Empty;
+
+    [JsonPropertyName("params")]
     public JsonElement Params { get; set; }
 }
 
 public class JsonRpcResponse
 {
+    [JsonPropertyName("jsonrpc")]
     public string Jsonrpc { get; set; } = "2.0";
+
+    [JsonPropertyName("id")]
     public int Id { get; set; }
+
+    [JsonPropertyName("result")]
     public object Result { get; set; } = new { };
 }
