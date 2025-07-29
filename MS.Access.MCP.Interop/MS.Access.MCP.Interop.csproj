@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableComHosting>true</EnableComHosting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Access" Version="15.0.4420.1018" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.0" />
+  </ItemGroup>
+
+</Project> 

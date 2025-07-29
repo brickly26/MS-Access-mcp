@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "sV+3C4KVQRA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\brickly\\Desktop\\MS-Access-MCP\\MS.Access.MCP.Interop\\MS.Access.MCP.Interop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\brickly\\.nuget\\packages\\microsoft.office.interop.access\\15.0.4420.1018\\microsoft.office.interop.access.15.0.4420.1018.nupkg.sha512",
+    "C:\\Users\\brickly\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\brickly\\.nuget\\packages\\system.data.oledb\\8.0.0\\system.data.oledb.8.0.0.nupkg.sha512",
+    "C:\\Users\\brickly\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\brickly\\.nuget\\packages\\system.diagnostics.performancecounter\\8.0.0\\system.diagnostics.performancecounter.8.0.0.nupkg.sha512",
+    "C:\\Users\\brickly\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
