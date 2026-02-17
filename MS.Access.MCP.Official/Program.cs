@@ -7,7 +7,6 @@ class Program
     static async Task Main(string[] args)
     {
         // Suppress any build output by immediately starting JSON-RPC mode
-        Console.WriteLine(""); // Clear any pending output
         
         var accessService = new AccessInteropService();
         
@@ -32,7 +31,8 @@ class Program
                     if (root.TryGetProperty("id", out var idElement))
                         id = idElement.GetInt32();
                         
-                    var paramsElement = root.GetProperty("params");
+                    JsonElement paramsElement = default;
+                    bool hasParams = root.TryGetProperty("params", out paramsElement);
 
                     object result = method switch
                     {
@@ -78,7 +78,10 @@ class Program
         return new
         {
             protocolVersion = "2024-11-05",
-            capabilities = new { },
+            capabilities = new 
+            { 
+                tools = new { }
+            },
             serverInfo = new
             {
                 name = "Access MCP Server",
@@ -178,7 +181,7 @@ class Program
         try
         {
             // Hard-coded database path
-            var databasePath = @"C:\Users\brickly\Documents\Database1.accdb";
+            var databasePath = @"C:\Users\jjAzure\OneDrive - UMS Friedhofservice & Grabpflege GmbH\UMS - Public\erp demo\appGraz Demo.accdb";
             
             // Check if database file exists
             if (!File.Exists(databasePath))
